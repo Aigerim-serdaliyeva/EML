@@ -1,0 +1,256 @@
+
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.main-menu {
+    ul {
+      li {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .hamburger {
+    display: block;
+  }    
+
+  .header {
+    padding: 5px 0;
+  }
+
+  .footer {
+    text-align: center;
+
+    &__content {
+      flex-direction: column;
+
+      & > * {
+          margin: 0 0 20px 0 !important;            
+      }
+    }
+  }
+
+	.main-menu {
+    display: none;
+    background-color: #bdd7e2;
+    position: fixed;
+    top: 89px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 0;
+    z-index: 98;
+    padding: 10px 0;
+
+		ul {
+			display: block;
+			height: auto;
+      padding: 0;
+      margin: 0;
+
+			li {
+        margin: 0 0 5px;
+
+        &:last-child {
+          margin: 0;
+        }
+			}
+		}
+  }    
+
+  .s-main {
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+    ul {
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+    .form {
+      position: relative;
+      top: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .s-advantage {
+    &__content {
+      flex-wrap: wrap;
+    }
+    .advantage {
+      margin-bottom: 20px;
+    }
+  }
+
+  .s-gruz {
+    &__content {
+      margin-bottom: 30px;
+    }
+    .form {
+      margin: 0 auto;
+    }
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+
+  .header {
+    &__title {
+      display: none;
+    }
+  }
+
+  .form {
+    &--horizontal {
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .header {
+    .grow {
+      display: block;
+    }
+  }
+
+  .section {
+    &-title {
+      font-size: 24px;
+    }      
+  }
+
+  .s-advantage {
+    .advantage {
+      width: 48%;
+      &__img {
+        margin-bottom: 10px;
+      }
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .s-gruz {
+    .gruz {
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .s-route {
+    .route {
+      &__img {
+        margin: 0 auto 25px;
+        text-align: center;
+      }
+      &__strana {
+        left: 45%;
+      }
+      &__kz {
+        left: 65%;
+      }
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .call-me {
+    display: flex;
+  }
+
+  .s-route {
+    .route {
+      &__img {
+        max-width: 180px;
+      }
+      &__strana {
+        font-size: 16px;
+        left: 43%;
+      }
+      &__kz {
+        font-size: 16px;
+        left: 74%;
+      }
+    }
+  }
+
+  .s-pismo {
+    .carousel-pismo {
+      padding: 0;
+    }
+  }
+
+  .s {
+    &-thanks {
+      padding: 150px 0 50px;
+      
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
