@@ -240,16 +240,27 @@
   background-color: #e5eff3;
 
   .gruz {
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &-1 {
+      background-image: url("../img/gruz-1.jpg");
+    }
+    &-2 {
+      background-image: url("../img/gruz-2.jpg");
+    }
+    &-3 {
+      background-image: url("../img/gruz-3.jpg");
+    }
+    &-4 {
+      background-image: url("../img/gruz-4.jpg");
+    }
     &__title {
-      position: absolute;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 50%;
-      transform: translateX(-50%);
+      padding: 50px 0 64px;
+      text-align: center;
     }
   }
 
@@ -303,6 +314,7 @@
 }
 
 .s-srok {
+  background-color: #e5eff3;
 
   .srok {
     position: relative;
@@ -574,6 +586,7 @@
 
   table {
     font-weight: normal;
+    margin-bottom: 30px;
     tr {
       border: 1px solid #fff;
     }
@@ -593,6 +606,11 @@
 
   .form {
     background-image: url("../img/srok-big-1.jpg");
+    background-repeat: no-repeat;
+    margin: 0 -35px -35px -35px;
+    &__content {
+      max-width: 615px;
+    }
   }
 
 }

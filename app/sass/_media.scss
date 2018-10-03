@@ -98,6 +98,19 @@
     }
   }
 
+  
+  .s-srok {
+    .srok {
+      text-align: center;
+      margin-bottom: 30px;
+      &__block {
+        width: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
   .s-price {
     .s-info {
       margin-bottom: 30px;
@@ -110,6 +123,13 @@
   .s-service {
     .service {
       margin-bottom: 20px;
+    }
+  }
+
+  .s-contact {
+    .contact {
+      position: relative;
+      margin: 20px 0;
     }
   }
 
@@ -159,7 +179,7 @@
 
   .section {
     &-title {
-      font-size: 24px;
+      font-size: 30px;
     }      
   }
 
@@ -200,9 +220,25 @@
 
   .s-srok {
     .srok {
-      margin-bottom: 30px;
+      &__title {
+        font-size: 18px;
+      }
     }
   }
+
+  .perevozka {
+    .form {
+      background-position: center center;
+      background-size: cover;
+    }
+
+    table {
+      td {
+        padding: 0 10px;
+      }
+    }
+  }
+
 }
 
 // ≥576px
@@ -211,8 +247,23 @@
     display: flex;
   }
 
+  .section {
+    &-title {
+      font-size: 24px;
+    }
+  }
+
   .s-info {
     font-size: 15px;
+  }
+
+  .s-gruz {
+    .gruz {
+      background-size: contain;
+      &__title {
+        padding: 25px 0;
+      }
+    }
   }
 
   .s-route {
@@ -227,6 +278,22 @@
       &__kz {
         font-size: 16px;
         left: 74%;
+      }
+    }
+  }
+
+  .s-srok {
+    .srok {
+      &__block {
+        white-space: nowrap;
+      }
+      &__title {
+        // font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .button {
+        padding: 7px 20px;
       }
     }
   }
@@ -264,6 +331,14 @@
     }
   }
 
+  .s-contact {
+    .contact {
+      padding: 25px 15px;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
   .s {
     &-thanks {
       padding: 150px 0 50px;
@@ -277,6 +352,33 @@
         margin-bottom: 40px;
       }
     }
+  }
+
+  .perevozka {
+    .form {
+      margin: 0 -10px -25px;;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__select {
+      display: table-cell;
+    }
+    &-td {
+      display: none;
+    }
+    tbody {
+      td {
+        display: none;
+        &.active {
+          display: table-cell;
+        }
+      }
+    }
+  }
+
+  .remodal {
+    padding: 25px 10px;
   }
 }
 
