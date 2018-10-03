@@ -97,6 +97,22 @@
       margin: 0 auto;
     }
   }
+
+  .s-price {
+    .s-info {
+      margin-bottom: 30px;
+    }
+    .form {
+      margin: 0 auto;
+    }
+  }
+
+  .s-service {
+    .service {
+      margin-bottom: 20px;
+    }
+  }
+
 }
 
 // ≥768px
@@ -181,12 +197,22 @@
       }
     }
   }
+
+  .s-srok {
+    .srok {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
   .call-me {
     display: flex;
+  }
+
+  .s-info {
+    font-size: 15px;
   }
 
   .s-route {
@@ -208,6 +234,33 @@
   .s-pismo {
     .carousel-pismo {
       padding: 0;
+    }
+  }
+
+  .s-price {
+    .price {
+      margin-left: 0;
+      margin-bottom: 25px;
+      &__title {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      ul {
+        margin-left: 10px;
+        li {
+          font-size: 14px;
+          margin-bottom: 10px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+
+  .s-service {
+    .service {
+      &__title {
+        max-width: none;
+      }
     }
   }
 

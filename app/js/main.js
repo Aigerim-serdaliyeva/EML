@@ -52,7 +52,7 @@ $(document).ready(function () {
     var scrollPos = $wnd.scrollTop() + headerHeight;
 
     // добавляет клас active в ссылку меню, когда находимся на блоке, куда эта ссылка ссылается
-    $menu.find(".link").each(function () {
+    $menu.find(".link a").each(function () {
       var link = $(this);
       var id = link.attr('href');
 
@@ -61,9 +61,9 @@ $(document).ready(function () {
         var sectionTop = section.offset().top;
 
         if (sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
-          link.addClass('active');
+          link.parent().addClass('active');
         } else {
-          link.removeClass('active');
+          link.parent().removeClass('active');
         }
       }
     });
@@ -72,7 +72,7 @@ $(document).ready(function () {
   onscroll();
 
   // при нажатии на меню плавно скролит к соответсвующему блоку
-  $(".main-menu .link").click(function (e) {
+  $(".main-menu .link a").click(function (e) {
     var $href = $(this).attr('href');
     if ($href.length > 1 && $href.charAt(0) == '#' && $($href).length > 0) {
       e.preventDefault();
@@ -174,7 +174,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
       767: { items: 3, mouseDrag: true, dots: false, nav: true },
     },
   });
