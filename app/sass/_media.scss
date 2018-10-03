@@ -126,6 +126,16 @@
     }
   }
 
+  .s-valuation {
+    .valuation__info {
+      margin-bottom: 30px;
+    }
+    .report {
+      display: block;
+      text-align: center;
+    }
+  }
+
   .s-contact {
     .contact {
       position: relative;
@@ -204,16 +214,28 @@
   }
 
   .s-route {
+    &__content {
+      display: none;
+    }
+
+    .carousel-route {
+      display: block;
+      margin-bottom: 30px;
+    }
+
     .route {
+      margin-bottom: 10px;
       &__img {
-        margin: 0 auto 25px;
-        text-align: center;
+        max-width: 180px;
+        margin: 0 0 25px 0 !important;
       }
       &__strana {
-        left: 45%;
+        font-size: 16px;
+        left: 38%;
       }
       &__kz {
-        left: 65%;
+        font-size: 16px;
+        left: 83%;
       }
     }
   }
@@ -269,15 +291,14 @@
   .s-route {
     .route {
       &__img {
-        max-width: 180px;
+        max-width: 160px;
       }
       &__strana {
-        font-size: 16px;
-        left: 43%;
+        left: 32%;
       }
-      &__kz {
-        font-size: 16px;
-        left: 74%;
+      &__kz {        
+        top: 130px;
+        left: 77%;
       }
     }
   }

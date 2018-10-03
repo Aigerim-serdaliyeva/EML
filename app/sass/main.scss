@@ -15,9 +15,10 @@
   width: 100%;
   z-index: 98;
   padding: 10px 0;
-  background-color: #bdd7e2;
+  background-color: rgba(#bdd7e2, .3); 
 
   &--scrolled {    
+    background-color: #bdd7e2;
   }
 
   &__content {
@@ -157,7 +158,7 @@
 }
 
 .s-main {
-  padding-top: 150px;
+  padding-top: 140px;
   background-image: url("../img/main-back.jpg");
   // min-height: 650px;
 
@@ -286,6 +287,10 @@
 
 .s-route {
 
+  .carousel-route {
+    display: none;
+  }
+
   .route {
     position: relative;
     margin-bottom: 30px;
@@ -405,6 +410,11 @@
     &__img {
       flex-shrink: 0;
       margin-right: 16px;
+      width: 55px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
     }
     &__title {
       font-size: 16px;
@@ -619,6 +629,25 @@
     }
   }
 
+}
+
+.politika {
+  max-width: 750px;
+  background-color: #fff;
+  &__title {
+    font-size: 20px;
+    font-family: Franklin Gothic, serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 12px;
+    margin-bottom: 15px;
+    span {
+      color: $green;
+    }
+  }
 }
 
 

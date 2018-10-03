@@ -179,6 +179,19 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-route").owlCarousel({
+    loop: false,
+    dots: true,
+    nav: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false,   },
+      576: { items: 1, mouseDrag: true, },
+    },
+  });
+
 
 });
 
