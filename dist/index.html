@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -101,8 +101,8 @@
     <section class="section s-main" id="main">
       <div class="container">
         <div class="s-main__content">
-          <h1 class="s-main__title">Международные перевозки грузов объемом от 300 кг.  
-              всего за 99 900 тенге</h1>
+          <h1 class="s-main__title">Международные перевозки грузов объемом <span class="word">от 300 кг.</span>  
+              всего <span class="word">за 99 900 тенге</span></h1>
           
           <ul>
             <li>Перевозки из Европы, России, Китая и Белоруссии</li>
@@ -273,13 +273,13 @@
       <div class="container">
         <h2 class="section-title">Осуществляем международные перевозки грузов <br>
             по направлениям:</h2>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center s-route__content">
           <div class="col-lg-4 col-md-6">
             <div class="route">
               <div class="route__strana">Европа</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Европа-Казахстан">Рассчитать стоимость</button>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -287,7 +287,7 @@
               <div class="route__strana">Россия</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Россия-Казахстан">Рассчитать стоимость</button>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -295,8 +295,28 @@
               <div class="route__strana">Белоруссия</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Белоруссия-Казахстан">Рассчитать стоимость</button>
             </div>
+          </div>
+        </div>
+        <div class="owl-carousel carousel-route">
+          <div class="route">
+            <div class="route__strana">Европа</div>
+            <div class="route__img"><img src="./img/route.png" alt=""></div>
+            <div class="route__kz">Казахстан</div>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Европа-Казахстан">Рассчитать стоимость</button>
+          </div>
+          <div class="route">
+            <div class="route__strana">Россия</div>
+            <div class="route__img"><img src="./img/route.png" alt=""></div>
+            <div class="route__kz">Казахстан</div>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Россия-Казахстан">Рассчитать стоимость</button>
+          </div>
+          <div class="route">
+            <div class="route__strana">Белоруссия</div>
+            <div class="route__img"><img src="./img/route.png" alt=""></div>
+            <div class="route__kz">Казахстан</div>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Белоруссия-Казахстан">Рассчитать стоимость</button>
           </div>
         </div>
         <div class="s-info">*Перевозим грузы весом 300 кг. и более  </div>
@@ -500,31 +520,63 @@
             <div class="col-lg-9">
               <div class="valuation">
                 <img src="./img/valuation.png" class="valuation__img" alt="">
-                <div class="valuation__text valuation__text--center valuation__text--1">
+                <div class="valuation__item valuation__item--center valuation__item--1">
+                  <div class="valuation__number">1</div>
                   <div class="valuation__num">1,00</div>
-                  Соответствие транспортного средства
+                  <div class="valuation__text">Соответствие транспортного средства</div>
                 </div>
-                <div class="valuation__text valuation__text--right valuation__text--2">
+                <div class="valuation__item valuation__item--right valuation__item--2">
+                  <div class="valuation__number">2</div>
                   <div class="valuation__num">1,00</div>
-                  Выполнены основные требования
+                  <div class="valuation__text">Выполнены основные требования</div>
                 </div>
-                <div class="valuation__text valuation__text--right valuation__text--3">
+                <div class="valuation__item valuation__item--right valuation__item--3">
+                  <div class="valuation__number">3</div>
                   <div class="valuation__num">1,00</div>
-                  Груз доставлен без повреждений
+                  <div class="valuation__text">Груз доставлен без повреждений</div>
                 </div>
-                <div class="valuation__text valuation__text--left valuation__text--4">
+                <div class="valuation__item valuation__item--left valuation__item--4">
+                  <div class="valuation__number">4</div>
                   <div class="valuation__num">1,00</div>
-                  Вовремя осуществляли погрузку
+                  <div class="valuation__text">Вовремя осуществляли погрузку</div>
                 </div>
-                <div class="valuation__text valuation__text--left valuation__text--5">
+                <div class="valuation__item valuation__item--left valuation__item--5">
+                  <div class="valuation__number">5</div>
                   <div class="valuation__num">1,00</div>
-                  Вовремя доставляли
+                  <div class="valuation__text">Вовремя доставляли</div>
                 </div>
-                <div class="valuation__text valuation__text--center valuation__text--6">
+                <div class="valuation__item valuation__item--center valuation__item--6">
+                  <div class="valuation__number">6</div>
                   <div class="valuation__num">1,00</div>
-                  Без дефектов
+                  <div class="valuation__text">Без дефектов</div>
                 </div>
-              </div> 
+              </div>
+              <ol class="valuation__list">
+                <li>
+                  <span>1,00</span>
+                  <span>Соответствие транспортного средства</span>
+                </li>
+                <li>
+                  <span>1,00</span>
+                  <span>Выполнены основные требования</span>
+                </li>
+                <li>
+                  <span>1,00</span>
+                  <span>Груз доставлен без повреждений</span>
+                </li>
+                <li>
+                  <span>1,00</span>
+                  <span>Вовремя осуществляли погрузку</span>
+                </li>
+                <li>
+                  <span>1,00</span>
+                  <span>Вовремя доставляли</span>
+                </li>
+                <li>
+                  <span>1,00</span>
+                  <span>Без дефектов</span>
+                </li>
+              </ol>
               <div class="valuation__info">*1,00 - максимальный балл</div>             
             </div>
             <div class="col-lg-3">
@@ -606,6 +658,35 @@
           </div>
           <div class="form__info">* Ваши данные в безопасности <br> и не будут переданы третьим лицам</div>
           <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать звонок</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="route-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+
+    <div class="remodal__title remodal__title--min inverse">
+      Оставьте заявку, и мы рассчитаем стоимость перевозки
+      Ваших грузов по интересующему направлению
+    </div>
+
+    <div class="form form--vertical inverse">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Рассчитать стоимость перевозки">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Представьтесь">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          <div class="form__info">* Ваши данные в безопасности <br> и не будут переданы третьим лицам</div>
+          <button class="button ajax-submit" type="submit" id="rasshitat_stoimost">Рассчитать стоимость</button>
 
         </div>
       </form>
@@ -802,6 +883,29 @@
         <div class="form__info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
       </form>
     </div>
+  </div>
+
+  <div class="remodal politika" data-remodal-id="politika" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="politika__title">Политика конфиденциальности</div>
+    <div class="politika__text">Соблюдение Вашей конфиденциальности важно для нашей компании. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как используется и хранится Ваша информация. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</div>
+    <div class="politika__text"><span>Сбор и использование персональной информации</span> <br>
+      Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним. От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами.</div>
+    <div class="politika__text"><span>Какую персональную информацию мы собираем</span> <br>
+      Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</div>
+    <div class="politika__text"><span>Как мы используем Вашу персональную информацию</span> <br>
+      Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг. Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</div>
+    <div class="politika__text"><span>Раскрытие информации третьим лицам</span> <br>
+      Мы не раскрываем полученную от Вас информацию третьим лицам.</div>
+    <div class="politika__text"><span>Исключения</span> <br>
+      В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РК. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях. <br>
+      В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</div>
+    <div class="politika__text"><span>Защита персональной информации</span> <br>
+      Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</div>
+    <div class="politika__text"><span>Соблюдение Вашей конфиденциальности на уровне компании</span> <br>
+      Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности.  </div>
+
   </div>
 
   <script src="./js/libs.min.js"></script>
