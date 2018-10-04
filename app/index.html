@@ -279,7 +279,7 @@
               <div class="route__strana">Европа</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Европа-Казахстан">Рассчитать стоимость</button>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -287,7 +287,7 @@
               <div class="route__strana">Россия</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Россия-Казахстан">Рассчитать стоимость</button>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
@@ -295,7 +295,7 @@
               <div class="route__strana">Белоруссия</div>
               <div class="route__img"><img src="./img/route.png" alt=""></div>
               <div class="route__kz">Казахстан</div>
-              <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+              <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Белоруссия-Казахстан">Рассчитать стоимость</button>
             </div>
           </div>
         </div>
@@ -304,19 +304,19 @@
             <div class="route__strana">Европа</div>
             <div class="route__img"><img src="./img/route.png" alt=""></div>
             <div class="route__kz">Казахстан</div>
-            <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Европа-Казахстан">Рассчитать стоимость</button>
           </div>
           <div class="route">
             <div class="route__strana">Россия</div>
             <div class="route__img"><img src="./img/route.png" alt=""></div>
             <div class="route__kz">Казахстан</div>
-            <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Россия-Казахстан">Рассчитать стоимость</button>
           </div>
           <div class="route">
             <div class="route__strana">Белоруссия</div>
             <div class="route__img"><img src="./img/route.png" alt=""></div>
             <div class="route__kz">Казахстан</div>
-            <button class="button" data-remodal-target="route-modal">Рассчитать стоимость</button>
+            <button class="button" data-remodal-target="route-modal" data-value="Рассчитать стоимость перевозки Белоруссия-Казахстан">Рассчитать стоимость</button>
           </div>
         </div>
         <div class="s-info">*Перевозим грузы весом 300 кг. и более  </div>
@@ -635,14 +635,15 @@
   <div class="remodal remodal--small" data-remodal-id="route-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
 
-    <div class="remodal__title remodal__title--min inverse">Оставьте заявку, и мы рассчитаем стоимость перевозки <br>
-      Ваших грузов по интересующему направлению</div>
+    <div class="remodal__title remodal__title--min inverse">
+      Оставьте заявку, и мы рассчитаем стоимость перевозки
+      Ваших грузов по интересующему направлению
+    </div>
 
     <div class="form form--vertical inverse">
       <form action="/mail.php" method="post">
         <div class="form__content">
-          <input type="hidden" name="info" value="Оставьте заявку, и мы рассчитаем стоимость перевозки <br>
-          Ваших грузов по интересующему направлению">
+          <input type="hidden" name="info" value="Рассчитать стоимость перевозки">
 
           <div class="input-div">
             <input type="text" class="input" name="name" placeholder="Представьтесь">

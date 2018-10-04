@@ -166,6 +166,24 @@ $(document).ready(function () {
     $parent.find("tbody td").removeClass("active").filter(':nth-child(' + val +')').addClass('active');
   });
 
+  /** Рассчитать стоимость  */
+  var modalValue = "";
+
+  $(document).on('click', '[data-remodal-target]', function(e) {
+    var val = $(this).data('value');
+    modalValue = val;
+  });
+
+  $(document).on('opening', '[data-remodal-id]', function(e) {
+    setTimeout(function(){
+      if (modalValue) {
+        var $info = $(this).find('[name="info"]');
+        $info.val(modalValue);
+      }  
+    }, 10);
+  });
+  /** END Рассчитать стоимость  */
+
 
   $(".carousel-pismo").owlCarousel({
     loop: false,
