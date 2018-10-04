@@ -248,6 +248,17 @@
     }
   }
 
+  .s-valuation {
+    .valuation {
+      &__number, &__list {
+        display: block;
+      }
+      &__text, &__num {
+        display: none;
+      }
+    }
+  }
+
   .perevozka {
     .form {
       background-position: center center;
