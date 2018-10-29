@@ -280,10 +280,11 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-  .call-me {
-    display: flex;
-  }
 
+  .callback__wrapper {
+    display: block !important; 
+  }
+  
   .section {
     &-title {
       font-size: 24px;
